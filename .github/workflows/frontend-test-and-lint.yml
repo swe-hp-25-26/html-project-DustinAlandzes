@@ -1,4 +1,4 @@
-name: FrontendTest
+name: FrontendBuildLintTest
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-lint-test:
     runs-on: ubuntu-latest
     defaults:
       run:
