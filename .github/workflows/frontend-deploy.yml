@@ -2,7 +2,7 @@ name: DeployFrontend
 
 on:
   workflow_run:
-    workflows: [ "FrontendTest"  ]
+    workflows: [ "FrontendBuildLintTest"  ]
     branches:
       - main
     types:
