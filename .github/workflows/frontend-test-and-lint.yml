@@ -1,4 +1,4 @@
-name: FrontendTest
+name: FrontendBuildLintTest
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-lint-test:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -33,5 +33,5 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: tsc
-#      - run: npm test
-#      - run: npm run lint
+      - run: npm test
+      - run: npm run lint
