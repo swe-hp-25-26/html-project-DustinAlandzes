@@ -56,6 +56,10 @@ header {
   /*background-color: var(--foreground);*/
 }
 
+#logo-name:hover {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   padding: 1vh;

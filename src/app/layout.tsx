@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${playfairDisplay.variable} `}>
         <header>
-          <Link href="/"><h1>Dustin Alandzes</h1></Link>
+          <Link href="/" id={"logo-name"}><h1>Dustin Alandzes</h1></Link>
           <nav>
             <Link href="/biography">Biography</Link>
             <Link href="/experience">Experience</Link>
