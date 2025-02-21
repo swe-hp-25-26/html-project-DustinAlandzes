@@ -10,21 +10,24 @@ export default function Experience() {
     <ul id={"experience-list"}>
       <li>
         <a href={"https://hp.com/"}>
-          <Image src={HPLogo} alt={"HP Logo"} width={100}/>
+          <Image src={HPLogo} alt={"HP Logo"} height={100}/>
         </a>
-        HP January 2025 - Now
+        HP
+        <small>January 2025 - <strong>Now</strong></small>
       </li>
       <li>
         <a href={"https://drchrono.com/"}>
-          <Image src={DrChronoLogo} alt={"DrChrono Logo"} width={100}/>
+          <Image src={DrChronoLogo} alt={"DrChrono Logo"} height={100}/>
         </a>
-        DrChrono February 2020 - November 2023
+        DrChrono
+        <small>February 2020 - November 2023</small>
       </li>
       <li>
         <a href={"https://legalist.com"}>
-          <Image src={LegalistLogo} alt={"Legalist Logo"} width={ 100}/>
+          <Image src={LegalistLogo} alt={"Legalist Logo"} height={ 100}/>
         </a>
-        Legalist April 2019 - September 2019
+        Legalist
+        <small>April 2019 - September 2019</small>
       </li>
     </ul>
   </section>
