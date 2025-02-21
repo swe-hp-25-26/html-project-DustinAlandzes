@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Playfair_Display } from "next/font/google";
+import localFont from 'next/font/local';
 import "./globals.css";
 import Link from "next/link";
+import GithubMarkLogo from '../../public/github-mark.png'
 import GithubLogo from '../../public/GitHub_Logo.png'
-import GithubLogoWhite from '../../public/GitHub_Logo_White.png.png'
+import LinkedInLogo from '../../public/In-Blue-128@2x.png'
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"]
+const playfairDisplay = localFont({
+  src: '../../public/PlayfairDisplay-VariableFont_wght.ttf'
 })
 
 export const metadata: Metadata = {
@@ -23,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfairDisplay.variable} `}>
+      <body className={`${playfairDisplay.className} `}>
         <header>
-          <Link href="/" id={"logo-name"}><h1>Dustin Alandzes</h1></Link>
+          <Link href="/" id={"logo-name"}>
+            <h1>Dustin Alandzes 👋</h1>
+          </Link>
           <nav>
             <Link href="/biography">Biography</Link>
             <Link href="/experience">Experience</Link>
@@ -37,7 +39,8 @@ export default function RootLayout({
         </main>
         <footer>
           <a href={"https://github.com/DustinAlandzes"}>
-            <Image src={GithubLogo} alt="Github Logo" id={"github-logo"} height={50}/>
+            <Image src={GithubMarkLogo} alt="Github Logo" id={"github-logo"} height={50}/>
+            <Image src={LinkedInLogo} alt="LinkedIn Logo" id={"linkedin-logo"} height={50}/>
           </a>
         </footer>
       </body>
