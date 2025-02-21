@@ -10,6 +10,10 @@ const playfairDisplay = localFont({
   src: '../../public/PlayfairDisplay-VariableFont_wght.ttf'
 })
 
+const robotoCondensed = localFont({
+  src: '../../public/RobotoCondensed-VariableFont_wght.ttf'
+})
+
 export const metadata: Metadata = {
   title: "Dustin Alandzes",
   description: "Software Engineer",
@@ -22,10 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfairDisplay.className} `}>
+      <body className={`${robotoCondensed.className}`}>
         <header>
           <Link href="/" id={"logo-name"}>
-            <h1>Dustin Alandzes 👋</h1>
+            <h1 className={playfairDisplay.className}>Dustin Alandzes 👋</h1>
           </Link>
           <nav>
             <Link href="/biography">Biography</Link>
