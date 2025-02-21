@@ -4,7 +4,6 @@ import localFont from 'next/font/local';
 import "./globals.css";
 import Link from "next/link";
 import GithubMarkLogo from '../../public/github-mark.png'
-import GithubLogo from '../../public/GitHub_Logo.png'
 import LinkedInLogo from '../../public/In-Blue-128@2x.png'
 
 const playfairDisplay = localFont({
