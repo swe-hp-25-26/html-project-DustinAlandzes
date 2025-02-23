@@ -16,7 +16,7 @@ export default function Page() {
             <Image src={GithubMarkLogo} alt={"Github Link for SM64"} width={25}/></a>
         </h2>
         <a href={"https://alandzes.com/super-mario-64-star-select/"}>
-          <Image src={SM64Box} alt={"Super Mario 64 Box"} width={400}/>
+          <Image src={SM64Box} alt={"Super Mario 64 Box"} width={200}/>
         </a>
       </li>
 
@@ -28,7 +28,7 @@ export default function Page() {
           </a>
         </h2>
         <a href={"https://alandzes.com/react-three-fiber-ssbm/"}>
-          <Image src={SSBMBox} alt={"Super Smash Brothers Melee Box"} width={400}/>
+          <Image src={SSBMBox} alt={"Super Smash Brothers Melee Box"} width={200}/>
         </a>
       </li>
     </ul>
