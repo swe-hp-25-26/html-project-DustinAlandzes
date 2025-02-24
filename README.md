@@ -1,3 +1,10 @@
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Usage
+```bash
+npm run dev
+```
+
 # HTML Project
 
 GOAL: Build a profile site that is all about you and to showcase all the work that you will do during your apprenticeship!
